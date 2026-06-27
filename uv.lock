@@ -903,6 +903,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "jupyter" },
+    { name = "minisearch" },
     { name = "minsearch" },
     { name = "openai" },
     { name = "python-dotenv" },
@@ -912,6 +913,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "minisearch", specifier = ">=1.0.1" },
     { name = "minsearch", specifier = ">=0.0.11" },
     { name = "openai", specifier = ">=2.37.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
@@ -991,6 +993,26 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/bd/c0/9f7c9a46090390368a4d7bcb76bb87a4a36c421e4c0792cdb53486ffac7a/matplotlib_inline-0.2.2.tar.gz", hash = "sha256:72f3fe8fce36b70d4a5b612f899090cd0401deddc4ea90e1572b9f4bfb058c79", size = 8150, upload-time = "2026-05-08T17:33:33.49Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/41/09/5b161152e2d90f7b87f781c2e1267494aef9c32498df793f73ad0a0a494a/matplotlib_inline-0.2.2-py3-none-any.whl", hash = "sha256:3c821cf1c209f59fb2d2d64abbf5b23b67bcb2210d663f9918dd851c6da1fcf6", size = 9534, upload-time = "2026-05-08T17:33:32.055Z" },
+]
+
+[[package]]
+name = "minisearch"
+version = "1.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/12/4f/16ef2ea7e2b7ef969b9f68bac1cb47887766bac65f450b6e87fd8e1cc76a/minisearch-1.0.1.tar.gz", hash = "sha256:33fc044a5af867ad65d3ea51f0321c70406e591a9d8a8afea9b7536cc28526a5", size = 32924, upload-time = "2026-02-22T22:15:28.291Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/14/16/75880e2b5ad72d5d69fd4cb48c36e3a73df013b002399a0f0880466dae23/minisearch-1.0.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:7e70d38b3c56c0e27ca353d50dd09fbdfb1febfdb5b587f4203a9b3259295478", size = 562603, upload-time = "2026-02-22T22:15:05.388Z" },
+    { url = "https://files.pythonhosted.org/packages/3e/ca/adb96882656b13a0962991c4bfbdccafa6dbcccd5e86091b5e18290e85c2/minisearch-1.0.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ba39e3cdd407bc646ecd7d682e287350118cbcd6f78df489c9fa8b91bce83afc", size = 614672, upload-time = "2026-02-22T22:15:11.576Z" },
+    { url = "https://files.pythonhosted.org/packages/72/4f/e21d809788c1e9f461a2501d042674ccf1c056f8842c87b29a0089c72930/minisearch-1.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4f65fc272a40119f5a9688e7c74d3c52ef01c075ba21ead0af30518ab9d8ae16", size = 634748, upload-time = "2026-02-22T22:15:17.34Z" },
+    { url = "https://files.pythonhosted.org/packages/48/46/76f05952e6a741a094ace89cabd5e4ebec329068dd2e308c9b34a0079081/minisearch-1.0.1-cp312-cp312-win_amd64.whl", hash = "sha256:c205efcea681ffd7da313b90bd6a9c43697a545f1faa663b71e5897852f9b7c9", size = 476557, upload-time = "2026-02-22T22:15:23.568Z" },
+    { url = "https://files.pythonhosted.org/packages/53/d9/eb913a0c7b9457c903ebf97a31b5235f63ad35f4eff05215ff8f517b9b70/minisearch-1.0.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:9e2dc237ca5ac43d1e4ba1cb95a61717c778ff0b01430deadbf5a14dde045781", size = 562415, upload-time = "2026-02-22T22:15:07.028Z" },
+    { url = "https://files.pythonhosted.org/packages/99/5e/add47a2d981d5d8039d93926821b773542a52d1410533860c1515b878aed/minisearch-1.0.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f3bcadcae082975c73090f1a2e67a3ebbc0c534ff3dbfcfaa5dba5d0b55f954e", size = 614731, upload-time = "2026-02-22T22:15:13Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/2c/0aecdf2c912fba407536bff8c87cd032138c200236cd83a9114fc08bde42/minisearch-1.0.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f2ee3dbba3377d34596b751ecf33e80bec86c90bb54dc1bc855755b7b2e49104", size = 634423, upload-time = "2026-02-22T22:15:19.142Z" },
+    { url = "https://files.pythonhosted.org/packages/b8/8a/cf09b65a755fc974700d37828b29775450ccd4cecd2e426d2ccac444fc37/minisearch-1.0.1-cp313-cp313-win_amd64.whl", hash = "sha256:ee4fd8ff1edc2216e10ccaa6ddb0a29929dff90c68d140a9f7c87bab4e5d19aa", size = 476560, upload-time = "2026-02-22T22:15:25.184Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/5a/d8076984202366d90dfc2aa2f81d7a3d464aa714ec9ff786df6ae05204cc/minisearch-1.0.1-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:3059fe03e459bcb90058dc7241553b68776ea74edbbcc2e02e733a3a3ec94a9d", size = 561962, upload-time = "2026-02-22T22:15:08.558Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/7c/0dc5aed51da92002ec694a1ee92893b1fbdfaceb1466f8fb88ae284515b4/minisearch-1.0.1-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7cde4ac24d5f5fb8d13e85273880866c71ad54001c64fa5aa67c416b629677b7", size = 615039, upload-time = "2026-02-22T22:15:14.404Z" },
+    { url = "https://files.pythonhosted.org/packages/e9/e7/15b637d08af200a4c2cc54b673a383e84a6c339ba9bc85927acbf14c8744/minisearch-1.0.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:02a1a7fda1bd247510ad4d27fc0221685aa694ad5b7b4486fc7330a6c442481c", size = 635043, upload-time = "2026-02-22T22:15:20.559Z" },
+    { url = "https://files.pythonhosted.org/packages/81/9a/9be04c1c75ef587f3c479c66a3a574f6b11185647153a0a6ab54027246bf/minisearch-1.0.1-cp314-cp314-win_amd64.whl", hash = "sha256:9c2be27ce68f507945a3a542238a833515c4b93d5f16d74e821b0fe854a7fc07", size = 472790, upload-time = "2026-02-22T22:15:26.738Z" },
 ]
 
 [[package]]
