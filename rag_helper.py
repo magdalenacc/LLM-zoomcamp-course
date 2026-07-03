@@ -61,7 +61,7 @@ class RAGBase:
             question=query, context=context
         )
 
-    def llm(instructions, user_prompt, model="sonar"):
+    def llm(self, instructions, user_prompt, model="sonar"):
         message_history = [
             {"role": "system", "content": instructions},
             {"role": "user", "content": user_prompt}
@@ -74,8 +74,8 @@ class RAGBase:
 
         return response.choices[0].message.content
 
-    def rag(query, model="sonar"):
-        search_results = search(query)
-        prompt = build_prompt(query, search_results)
-        answer = llm(INSTRUCTIONS, prompt, model=model)
+    def rag(self, query, model="sonar"):
+        search_results = self.search(query)
+        prompt = self.build_prompt(query, search_results)
+        answer = self.llm(INSTRUCTIONS, prompt, model=model)
         return answer
